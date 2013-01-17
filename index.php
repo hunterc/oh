@@ -267,7 +267,7 @@
 		<!-- end modal input -->
 		<footer>
 			<hr>
-			<small>&copy; Hunter Cassidy / Disclaimer: <wbr>Your information may be tracked <wbr>by the system in order to <wbr>improve quality of service.<wbr> All data is anonymized.</small>
+			<small>&copy; Hunter Cassidy / Disclaimer: <wbr>Your information may be tracked <br>by the system in order to <wbr>improve quality of service.<wbr> All data is anonymized.</small>
 		</footer>
 	</body>	
 		
