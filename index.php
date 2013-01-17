@@ -435,6 +435,10 @@
 		  	</div>
 		</div>
 		<!-- end modal input -->
+		<footer>
+			<hr>
+			<small>&copy; Hunter Cassidy / Disclaimer: Your information may be tracked by the system in order to improve quality of service.  All data is anonymized.</small>
+		</footer>
 	</body>	
 		
 </html>

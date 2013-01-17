@@ -16,7 +16,8 @@
 		}
 	</style>
 
-	<link href="css/bootstrap-responsive.css" rel="stylesheet"> <!-- responsive bootstrap-->
+	<link href="css/bootstrap-responsive.css" rel="stylesheet"><!-- responsive bootstrap-->
+	<link rel="stylesheet" href="style.css">
 	
 	
 	<!-- js -->	
@@ -61,6 +62,10 @@
 			</center>
 		</div>
 	</div>
+	<footer>
+			<hr>
+			<small>&copy; Hunter Cassidy / Disclaimer: Your information may be tracked by the system in order to improve quality of service.  All data is anonymized.</small>
+		</footer>
 </body>
 
 <html>
