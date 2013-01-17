@@ -55,8 +55,9 @@
 		
 		<!-- stylesheets -->
 		<link href="css/bootstrap.css" rel="stylesheet">
-		<link href="css/bootstrap-responsive.css" rel="stylesheet"> <!-- responsive bootstrap-->
 		<link href="css/style.css" rel="stylesheet">
+		<link href="css/bootstrap-responsive.css" rel="stylesheet"> <!-- responsive bootstrap-->
+		
 		
 		<!-- js -->	
 		<!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>-->
@@ -183,13 +184,13 @@
 								<fieldset>
 								<legend>Join Queue</legend>
 									<div class="control-group">
-										<label class="control-label" for="loc">Your Location:</label>
+										<label class="control-label" for="loc">Your Location:</label><wbr>
 										<div class="controls">
 									  		<input type="text" name="loc" placeholder="Location...">
 										</div>
 								 	</div>
 								 	<div class="control-group">
-										<label class="control-label" for="help">Need help with:</label>
+										<label class="control-label" for="help">Need help with:</label><wbr>
 										<div class="controls">
 							  				<input type="text" name="help" placeholder="Activity 4...">
 								  		</div>
@@ -209,13 +210,13 @@
 						
 						<table>
 							<tr>
-								<td>Your spot in the queue: <strong><?php echo $position ?></strong></td><td><button type="button" class="btn btn-danger" onclick=student_remove()>Leave Queue</button></td>
+								<td>Your spot in the queue: <wbr><strong><?php echo $position ?></strong></td><td><button type="button" class="btn btn-danger" onclick=student_remove()>Leave Queue</button></td>
 							</tr>
 							<tr>
-								<td>You are at location: <strong><?php echo $location ?></strong></td><td><button type="button" class="btn btn-success" id="change_loc" onclick=change_location() >Change Location</button></td>	
+								<td>You are at location: <wbr><strong><?php echo $location ?></strong></td><td><button type="button" class="btn btn-success" id="change_loc" onclick=change_location() >Change Location</button></td>	
 							</tr>
 							<tr>
-								<td>You need help with: <strong><?php echo $help ?></strong></td><td><button type="button" class="btn btn-success" id="change_help" onclick=change_help() >Change Help</button></td>	
+								<td>You need help with: <wbr><strong><?php echo $help ?></strong></td><td><button type="button" class="btn btn-success" id="change_help" onclick=change_help() >Change Help</button></td>	
 							</tr>
 						</table>
 
@@ -266,7 +267,7 @@
 		<!-- end modal input -->
 		<footer>
 			<hr>
-			<small>&copy; Hunter Cassidy / Disclaimer: Your information may be tracked by the system in order to improve quality of service.  All data is anonymized.</small>
+			<small>&copy; Hunter Cassidy / Disclaimer: <wbr>Your information may be tracked <wbr>by the system in order to <wbr>improve quality of service.<wbr> All data is anonymized.</small>
 		</footer>
 	</body>	
 		
