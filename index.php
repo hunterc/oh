@@ -48,7 +48,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Office Hours</title>
-		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="Office Hours">
 		<meta name="author" content="HunterC">
 		
