@@ -206,7 +206,7 @@
 						
 						<table>
 							<tr>
-								<td>Your spot in the queue: <wbr><strong><?php echo $position ?></strong></td><td><button type="button" class="btn btn-danger" onclick=student_remove()>Leave Queue</button></td>
+								<td>Your spot in the queue: <strong><?php echo $position ?></strong></td><td><button type="button" class="btn btn-danger" onclick=student_remove()>Leave Queue</button></td>
 							</tr>
 							<tr>
 								<td>You are at location: <wbr><strong><?php echo $location ?></strong></td><td><button type="button" class="btn btn-success" id="change_loc" onclick=change_location() >Change Location</button></td>	
@@ -263,7 +263,9 @@
 		<!-- end modal input -->
 		<footer>
 			<hr>
-			<small>&copy; Hunter Cassidy<br>Disclaimer: Your information may be tracked <br>by the system in order to <br>improve quality of service.<wbr> All data is anonymized.</small>
+			<small>
+				&copy; Hunter Cassidy<br>Disclaimer: Your information may be tracked <br>by the system in order to <br>improve quality of service.<wbr> All data is anonymized.
+			</small>
 		</footer>
 	</body>	
 		
