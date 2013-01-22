@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <?php
 	$user_id = $_SERVER['PHP_AUTH_USER']; //get netbadge 
 	//$user_id = 'hwc2d';
@@ -264,7 +265,7 @@
 		<footer>
 			<hr>
 			<small>
-				&copy; Hunter Cassidy<br>Disclaimer: Your information may be tracked <br>by the system in order to <br>improve quality of service.<wbr> All data is anonymized.
+				&copy; Hunter Cassidy &middot; <a href="terms.html">Terms of Use</a>
 			</small>
 		</footer>
 	</body>	

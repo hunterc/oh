@@ -63,9 +63,9 @@ function change_location_confirm(){
 	 	success: function(data) {
 			$('#top-alert').html(data);
 			$('#top-alert').fadeIn('slow');
+			$("#student_info").load("index.php #student_info");
 	  }
 	});
-	$("#student_info").load("index.php #student_info");
 }
 
 function change_help_confirm(){
@@ -77,9 +77,10 @@ function change_help_confirm(){
 	 	success: function(data) {
 			$('#top-alert').html(data);
 			$('#top-alert').fadeIn('slow');
+			$("#student_info").load("index.php #student_info");
 	  }
 	});
-	$("#student_info").load("index.php #student_info");
+	
 }
 
 function ta_clear_confirm(){
@@ -90,9 +91,10 @@ function ta_clear_confirm(){
 		success: function(data){
 			$('#top-alert').html(data);
 			$('#top-alert').fadeIn('slow');
+			$('#student_table').load('index.php #student_table');
 		}
 	});
-	$('#student_table').load('index.php #student_table');
+	
 }
 
 function student_remove_confirm(){
@@ -103,9 +105,10 @@ function student_remove_confirm(){
 	 	success: function(data) {
 			$('#top-alert').html(data);
 			$('#top-alert').fadeIn('slow');
+			$('#student_info').load('index.php #student_info');
 	  }
 	});
-	$('#student_info').load('index.php #student_info');
+	
 }
 
 function ta_remove_confirm(){
@@ -117,9 +120,10 @@ function ta_remove_confirm(){
 	 	success: function(data) {
 			$('#top-alert').html(data);
 			$('#top-alert').fadeIn('slow');
+			$('#student_table').load('index.php #student_table');
 		}
 	});
-	$('#student_table').load('index.php #student_table');
+	
 }
 
 function toggle(){
@@ -139,9 +143,10 @@ function toggle_confirm(){
 			}else if(response == "off"){
 				$('#toggle_btn').text('Turn ON Queue');
 			}
+			$("#student_table").load("index.php #student_table");
 		}
 	});
-	$("#student_table").load("index.php #student_table");
+	
 }
 
 
