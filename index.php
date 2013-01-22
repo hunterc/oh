@@ -73,7 +73,7 @@
 			<div class="navbar-inner">
 				<div class="container">
 				
-					<a style="color: white" class="brand">Office Hours</a>
+					<a style="color: white" class="brand" href="#">Office Hours</a>
 					<ul class="nav pull-right">
 						<li>
 							<button class="btn">
