@@ -265,7 +265,7 @@
 		<footer>
 			<hr>
 			<small>
-				&copy; Hunter Cassidy &middot; <a href="terms.html">Terms of Use</a>
+				&copy; Hunter Cassidy and Daniel Miller &middot; <a href="terms.html">Terms of Use</a>
 			</small>
 		</footer>
 	</body>	
