@@ -181,13 +181,13 @@
 								<fieldset>
 								<legend>Join Queue</legend>
 									<div class="control-group">
-										<label class="control-label" for="loc">Your Location:</label><wbr>
+										<label class="control-label" for="loc">Your Location:</label><br>
 										<div class="controls">
 									  		<input type="text" name="loc" placeholder="Location...">
 										</div>
 								 	</div>
 								 	<div class="control-group">
-										<label class="control-label" for="help">Need help with:</label><wbr>
+										<label class="control-label" for="help">Need help with:</label><br>
 										<div class="controls">
 							  				<input type="text" name="help" placeholder="Activity 4...">
 								  		</div>
