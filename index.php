@@ -181,15 +181,15 @@
 								<fieldset>
 								<legend>Join Queue</legend>
 									<div class="control-group">
-										<label class="control-label" for="loc">Your Location:</label><br>
+										<label class="control-label" for="loc">Your Location (look for label on table):</label><br>
 										<div class="controls">
-									  		<input type="text" name="loc" placeholder="Location...">
+									  		<input type="text" name="loc" placeholder="Ex: A1">
 										</div>
 								 	</div>
 								 	<div class="control-group">
 										<label class="control-label" for="help">Need help with:</label><br>
 										<div class="controls">
-							  				<input type="text" name="help" placeholder="Activity 4...">
+							  				<input type="text" name="help" placeholder="Ex: Activity 4...">
 								  		</div>
 								  	</div>
 									<div class="control-group">
@@ -207,10 +207,10 @@
 						
 						<table>
 							<tr>
-								<td>Your spot in the queue: <strong><?php echo $position ?></strong></td><td><button type="button" class="btn btn-danger" onclick=student_remove()>Leave Queue</button></td>
+								<td>Your spot in the queue: <strong><?php echo $position ?></strong></td><td><button type="button" id="student_remove" class="btn btn-danger" onclick=student_remove()>Leave Queue</button></td>
 							</tr>
 							<tr>
-								<td>You are at location: <wbr><strong><?php echo $location ?></strong></td><td><button type="button" class="btn btn-success" id="change_loc" onclick=change_location() >Change Location</button></td>	
+								<td>You are at location: <wbr><strong><?php echo $location ?></strong></td><td><button type="button" id="change_loc" class="btn btn-success" id="change_loc" onclick=change_location() >Change Location</button></td>	
 							</tr>
 							<tr>
 								<td>You need help with: <wbr><strong><?php echo $help ?></strong></td><td><button type="button" class="btn btn-success" id="change_help" onclick=change_help() >Change Help</button></td>	
@@ -243,7 +243,7 @@
 		  	</div>
 		  	<div class="modal-footer">
 				<button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
-				<button class="btn btn-danger" onclick="remove_student_confirm()">Yes</button>
+				<button class="btn btn-danger" id="remove_student_confirm" onclick="remove_student_confirm()">Yes</button>
 		  	</div>
 		</div>
 		<!-- end modal yes/no -->
