@@ -265,7 +265,7 @@
 		<footer>
 			<hr>
 			<small>
-				&copy; Hunter Cassidy and Daniel Miller &middot; <a href="terms.html">Terms of Use</a>
+				&copy; Hunter Cassidy and Daniel Miller &middot; <a href="terms.html">Terms of Use</a> <?php if($user_role == 'Instructor' || $user_role == 'TA') { ?> &middot; <a href="log.php">Log</a> <?php } ?>  
 			</small>
 		</footer>
 	</body>	
