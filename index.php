@@ -10,7 +10,8 @@
 
 
 	//get the user's name from user_id
-	if($stmt -> prepare('SELECT fname, lname, role FROM roster WHERE comp_id = ?') or die(mysqli_error($db))) {
+	if($stmt -> prepare('SELECT fname, lname, role FROM roster WHERE comp_id = ? ORDER BY id DESC 
+') or die(mysqli_error($db))) {
 		$stmt -> bind_param("s", $user_id);
 		$stmt -> execute();
 		$stmt -> bind_result($user_fname, $user_lname, $user_role);
@@ -177,19 +178,19 @@
 					?>	
 						
 							<!-- join queue form -->
-							<form class="form-horizontal span-12" id="join_queue" name="join_queue">											
+							<form id="join_queue" name="join_queue">											
 								<fieldset>
 								<legend>Join Queue</legend>
 									<div class="control-group">
-										<label class="control-label" for="loc">Your Location (look for label on table):</label><br>
+										<label class="control-label" for="loc">Your Location:</label><br>
 										<div class="controls">
-									  		<input type="text" name="loc" placeholder="Ex: A1">
+									  		<input type="text" id="loc" name="loc" placeholder="Ex: A1">
 										</div>
 								 	</div>
 								 	<div class="control-group">
 										<label class="control-label" for="help">Need help with:</label><br>
 										<div class="controls">
-							  				<input type="text" name="help" placeholder="Ex: Activity 4...">
+							  				<input type="text" id="help" name="help" placeholder="Ex: Activity 4...">
 								  		</div>
 								  	</div>
 									<div class="control-group">
@@ -199,6 +200,8 @@
 									</div>
 								</legend>
 							</form>
+							
+			
 							<!-- end join form -->
 					<?php 
 							}
