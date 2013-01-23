@@ -2,7 +2,7 @@
   $user_comp_id = $_SERVER['PHP_AUTH_USER'];
   //$user_comp_id = 'hwc2d';
   
-  $help = $_GET['help'];
+  $help = strip_tags($_GET['help']);
   require_once('dbconnect.php');
 
   $db = DbUtil::loginConnection();

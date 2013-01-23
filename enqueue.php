@@ -2,8 +2,8 @@
 	$user_comp_id = $_SERVER['PHP_AUTH_USER'];
 	//$user_comp_id =  'hwc2d';
 	
-	$location = $_GET['loc'];
-	$help = $_GET['help'];
+	$location = strip_tags($_GET['loc']);
+	$help = strip_tags($_GET['help']);
 	
 	require_once('dbconnect.php');
 	$db = DbUtil::loginConnection();

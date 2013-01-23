@@ -2,7 +2,7 @@
   $user_comp_id = $_SERVER['PHP_AUTH_USER'];
   //$user_comp_id = 'hwc2d';
   
-  $loc = $_GET['loc'];
+  $loc = strip_tags($_GET['loc']);
   
   require_once('dbconnect.php');
 

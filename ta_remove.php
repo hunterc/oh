@@ -2,7 +2,7 @@
   $ta_comp_id = $_SERVER['PHP_AUTH_USER'];
   //$ta_comp_id = 'hwc2d';
   
-  $user_comp_id = $_GET['id'];
+  $user_comp_id = strip_tags($_GET['id']);
   
   require_once('dbconnect.php');
 
