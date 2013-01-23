@@ -42,6 +42,13 @@
 		fclose($fd);
 		return $status;
 	}	
+	
+	if($stmt -> prepare("SELECT COUNT(*) FROM active_queue") or die(mysqli_error($db))) {
+		$stmt -> execute();
+		$stmt -> bind_result($count);
+		$stmt -> fetch();
+	}
+	
 
 	
 ?>
@@ -49,7 +56,7 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title>Office Hours</title>
+		<title>Office Hours + <?php $count > 0 ? echo "(".$count.")" : echo "";?></title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="Office Hours">
 		<meta name="author" content="HunterC">
