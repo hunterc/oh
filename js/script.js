@@ -158,7 +158,8 @@ $(document).ready(function(){
 			type: "GET",
 		 	url: 'queue_count.php',
 		 	success: function(data) {
-				document.title = "Office Hours (" + data + ")"; 
+			 	
+				document.title = "Office Hours " + data; 
 			}
 		});
 	},15000);

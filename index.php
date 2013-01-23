@@ -131,7 +131,7 @@
 									<tbody>';
 							
 						//get users' information
-						if($stmt -> prepare("SELECT comp_id, fname, lname, location, help FROM active_queue NATURAL JOIN roster ORDER BY enter_ts") or die(mysqli_error($db))) {
+						if($stmt -> prepare("SELECT DISTINCT comp_id, fname, lname, location, help FROM active_queue NATURAL JOIN roster ORDER BY enter_ts") or die(mysqli_error($db))) {
 							$stmt -> execute();
 							$stmt -> bind_result($comp_id, $fname, $lname, $location, $help);
 							while($stmt -> fetch()){

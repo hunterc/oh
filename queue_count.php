@@ -9,7 +9,7 @@
 		$stmt -> bind_result($count);
 		$stmt -> fetch();
 	}
-	
-	echo $count;
-
+	if($count > 0){
+		echo "(".$count.")";
+	}
 ?>
