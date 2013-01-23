@@ -23,7 +23,6 @@
 	  $stmt -> fetch();
 	}
 	
-	echo mysqli_error($db);
 	if($stmt -> prepare("SELECT COUNT(*) FROM active_queue") or die(mysqli_error($db))) {
 		$stmt -> execute();
 		$stmt -> bind_result($position);

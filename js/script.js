@@ -154,6 +154,13 @@ var infoInterval = '';
 $(document).ready(function(){
 	setInterval(function(){
 		$('#student_table').load('index.php #student_table');
+		$.ajax({
+			type: "GET",
+		 	url: 'queue_count.php',
+		 	success: function(data) {
+				document.title = "Office Hours (" + data + ")"; 
+			}
+		});
 	},15000);
 	infoInterval = setInterval(function(){
 		$('#student_info').load('index.php #student_info');

@@ -10,7 +10,7 @@
 
 
 	//get the user's name from user_id
-	if($stmt -> prepare('SELECT fname, lname, role FROM roster WHERE comp_id = ?') or die(mysqli_error($db))) {
+	if($stmt -> prepare('SELECT fname, lname, role FROM roster WHERE comp_id = ? ORDER BY id DESC') or die(mysqli_error($db))) {
 		$stmt -> bind_param("s", $user_id);
 		$stmt -> execute();
 		$stmt -> bind_result($user_fname, $user_lname, $user_role);
