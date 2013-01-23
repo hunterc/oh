@@ -62,7 +62,7 @@
 			</center>
 		</div>
 	</div>
-	<footer>
+	<footer style="text-align: center">
 			<hr>
 			<small>&copy; Hunter Cassidy / Disclaimer: Your information may be tracked by the system in order to improve quality of service.  All data is anonymized.</small>
 		</footer>

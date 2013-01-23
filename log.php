@@ -66,7 +66,7 @@
 		<!-- end navbar -->
 		
 		<div class="container">
-			<h1>Log</h1><br>
+			<h1>Logs</h1><br>
 			<legend>Student Log</legend>
 			<?php 
 			$table = '<table class="table table-striped">
