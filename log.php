@@ -83,15 +83,51 @@
 			if ($stmt -> prepare("SELECT * FROM student_logs ORDER BY change_ts DESC") or die(mysqli_error($db))) {
 				$stmt -> execute();
 				$stmt -> bind_result($student_comp_id, $location, $help, $enter_ts, $leave_ts, $reason);
+				$counter = 0;
 				while ($stmt -> fetch()) {
 					$table = $table.'<tr><td>'.$student_comp_id.'</td><td>'.$location.'</td><td>'.$help.'</td><td>'. $enter_ts .'</td>
 								<td>'.$leave_ts.'</td><td>'.$reason.'</td></tr>';
+					$counter++;
 				}
 				$table = $table . '</tbody></table>';
-				echo $table;
+				if ($counter > 0) {
+					echo $table;
+				} else {
+					echo '<div class="alert">Log empty</div>';
+				}
+				
 			}
 			 ?>
 			<legend>TA Log</legend>
+			<?php 
+			$table = '<table class="table table-striped">
+									<thead>
+										<th>Student</th>
+										<th>TA</th>
+										<th>Help</th>
+										<th>Enter</th>
+										<th>Leave</th>
+										<th>Reason</th>
+									</thead>
+									<tbody>';
+			$stmt = $db -> stmt_init();
+			if ($stmt -> prepare("SELECT * FROM ta_logs ORDER BY leave_ts DESC") or die(mysqli_error($db))) {
+					$stmt -> execute();
+					$stmt -> bind_result($student_comp_id, $ta_comp_id, $help, $enter_ts, $leave_ts, $reason);
+					$counter = 0;
+					while ($stmt -> fetch()) {
+						$table = $table . '<tr><td>' . $student_comp_id . '</td><td>' . $ta_comp_id . '</td><td>' . $help . '</td><td>' . $enter_ts . '</td><td>' . $leave_ts . '</td><td>' . $reason;
+						$counter++;
+					}
+					$table = $table . '</tbody></table>';
+					if ($counter > 0) {
+						echo $table;
+					} else {
+						echo '<div class="alert">Log empty</div>';
+					}
+					
+			}
+			 ?>
 		</div>
 		<footer>
 			<hr>
