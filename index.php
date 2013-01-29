@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <?php
-	$user_id = $_SERVER['PHP_AUTH_USER']; //get netbadge 
-	//$user_id = 'hwc2d';
+	//$user_id = $_SERVER['PHP_AUTH_USER']; //get netbadge 
+	$user_id = 'hwc2d';
 
 	//set up database connection
 	require_once("dbconnect.php");
@@ -56,7 +56,7 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title>Office Hours <?php echo ($count > 0 ? "(".$count.")" : "");?></title>
+		<title><?php echo ($count > 0 ? "(".$count.") " : "");?>Office Hours</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="Office Hours">
 		<meta name="author" content="HunterC">
@@ -101,7 +101,9 @@
 			<div class="row-fluid">  
 				
 				<!-- alert field at top of container -->
-				<div id="top-alert" class="alert alert-success" style="display:none;"></div>
+				<div id="top-alert" class="alert alert-success" style="display:none;">
+					<button id="close_alert" class="close">×</button>
+				</div>
 				<!-- end alert field -->
 				
 				<!-- start admin section -->
@@ -118,9 +120,9 @@
 					?>
 					
 					
-					<button class="btn btn-primary" id="toggle_btn" onclick=toggle()><?php echo $button_status ?></button>
+					<button class="btn btn-primary" id="toggle_btn"><?php echo $button_status ?></button>
 					
-					<button class='btn btn-danger' onclick=ta_clear() id='ta_clear'>Clear Queue</button>
+					<button class='btn btn-danger' id='ta_clear'>Clear Queue</button>
 					
 				</header>
 				
@@ -143,7 +145,7 @@
 							$stmt -> bind_result($comp_id, $fname, $lname, $location, $help);
 							while($stmt -> fetch()){
 								$table = $table.'<tr><td>'.$fname.' '.$lname.'</td><td>'.$comp_id.'</td><td>'.$location.'</td><td>'. $help .'</td>
-								<td><button type="button" class="btn btn-danger" id="'.$comp_id.'" onclick=ta_remove("'.$comp_id.'")>×</button></td></tr>';
+								<td><button type="button" class="btn btn-danger ta_remove" name="'.$comp_id.'")>×</button></td></tr>';
 							}
 							$table = $table.'</tbody></table>';
 						}
@@ -220,7 +222,7 @@
 								<td>Your spot in the queue: <strong><?php echo $position ?></strong></td><td><button type="button" id="student_remove" class="btn btn-danger" onclick=student_remove()>Leave Queue</button></td>
 							</tr>
 							<tr>
-								<td>You are at location: <wbr><strong><?php echo $location ?></strong></td><td><button type="button" id="change_loc" class="btn btn-success" id="change_loc" onclick=change_location() >Change Location</button></td>	
+								<td>You are at location: <wbr><strong><?php echo $location ?></strong></td><td><button type="button" id="change_loc" class="btn btn-success" id="change_loc"	>Change Location</button></td>	
 							</tr>
 							<tr>
 								<td>You need help with: <wbr><strong><?php echo $help ?></strong></td><td><button type="button" class="btn btn-success" id="change_help" onclick=change_help() >Change Help</button></td>	

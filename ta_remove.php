@@ -36,6 +36,5 @@
   $db -> close();
   
   
-  echo '<button onclick=close_alert() class="close">×</button>';
   echo 'Successfully removed <strong>' . $user_comp_id . '</strong> from queue.';
 ?>

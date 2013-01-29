@@ -35,7 +35,7 @@
   $db -> close();
   
   
-  echo '<button onclick=close_alert() class="close">×</button>';
+  echo '<button id="close_alert" class="close">×</button>';
   echo 'Successfully changed <strong>help</strong>.';
 
 ?>

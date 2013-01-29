@@ -14,7 +14,7 @@
   $db -> close();
 
 
-  echo '<button onclick=close_alert() class="close">×</button>';
+  echo '<button id="close_alert" class="close">×</button>';
   echo 'Successfully removed all students from queue.';
   
 ?>
