@@ -1,5 +1,5 @@
 <?php
-/*	class DbUtil{
+	class DbUtil{
 		public static $lu = "cs4720hwc2d";
 		public static $lp = "hwc8591";
 		public static $host = "stardock.cs.virginia.edu";
@@ -15,9 +15,8 @@
 			return $db;
 		}
 	}
-?>
 
-*/
+/*
 	class DbUtil{
 		public static $lu = "root";
 		public static $lp = "root";
@@ -34,4 +33,5 @@
 			return $db;
 		}
 	}
+*/
 ?>

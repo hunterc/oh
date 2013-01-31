@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <?php
-	//$user_id = $_SERVER['PHP_AUTH_USER']; //get netbadge 
-	$user_id = 'hwc2d';
+	$user_id = $_SERVER['PHP_AUTH_USER']; //get netbadge 
+	//$user_id = 'hwc2d';
 
 	//set up database connection
 	require_once("dbconnect.php");
@@ -117,7 +117,6 @@
 							$button_status = "Turn ON Queue";
 						}
 					?>
-					
 					
 					<button class="btn btn-primary" id="toggle_btn"><?php echo $button_status ?></button>
 					
