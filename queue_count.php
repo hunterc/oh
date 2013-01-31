@@ -10,6 +10,6 @@
 		$stmt -> fetch();
 	}
 	if($count > 0){
-		echo "(".$count.")";
+		echo "(".$count.") ";
 	}
 ?>

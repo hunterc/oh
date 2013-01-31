@@ -1,6 +1,6 @@
 <?php
-  $user_comp_id = $_SERVER['PHP_AUTH_USER'];
-  //$user_comp_id = 'hwc2d';
+  //$user_comp_id = $_SERVER['PHP_AUTH_USER'];
+  $user_comp_id = 'hwc2d';
 
   require_once('dbconnect.php');
 
@@ -34,7 +34,7 @@
   $stmt -> close();
   $db -> close();
   
-  echo '<button onclick=close_alert() class="close">×</button>';
+  echo '<button id="close_alert" class="close">×</button>';
   echo 'You have been successfully removed from the queue.';
 
 ?>

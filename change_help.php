@@ -1,6 +1,6 @@
 <?php
-  $user_comp_id = $_SERVER['PHP_AUTH_USER'];
-  //$user_comp_id = 'hwc2d';
+  //$user_comp_id = $_SERVER['PHP_AUTH_USER'];
+  $user_comp_id = 'hwc2d';
   
   $help = strip_tags($_GET['help']);
   require_once('dbconnect.php');
@@ -35,7 +35,7 @@
   $db -> close();
   
   
-  echo '<button onclick=close_alert() class="close">×</button>';
+  echo '<button id="close_alert" class="close">×</button>';
   echo 'Successfully changed <strong>help</strong>.';
 
 ?>

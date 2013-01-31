@@ -1,5 +1,5 @@
 <?php
-	class DbUtil{
+/*	class DbUtil{
 		public static $lu = "cs4720hwc2d";
 		public static $lp = "hwc8591";
 		public static $host = "stardock.cs.virginia.edu";
@@ -17,3 +17,21 @@
 	}
 ?>
 
+*/
+	class DbUtil{
+		public static $lu = "root";
+		public static $lp = "root";
+		public static $host = "localhost";
+		public static $schema = "oh";
+
+		public static function loginConnection() {
+			$db = new mysqli(DbUtil::$host, DbUtil::$lu, DbUtil::$lp, DbUtil::$schema);
+			if($db->connect_errno) {
+				echo "fail";
+				$db->close();
+				exit();
+			}
+			return $db;
+		}
+	}
+?>
