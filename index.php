@@ -189,7 +189,7 @@
 								<fieldset>
 								<legend>Join Queue</legend>
 									<div class="control-group">
-										<label class="control-label" for="loc">Your Location:</label><br>
+										<label class="control-label" for="loc">Your Location in Thornton Stacks:</label><br>
 										<div class="controls">
 									  		<input type="text" id="loc" name="loc" placeholder="Ex: A1">
 										</div>
