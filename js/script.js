@@ -1,16 +1,20 @@
 //submit student to queue
 $(document).ready(function() { 
 	$("#join_btn").on("click", function(){
-		$.ajax({
-			type: "GET",
-			url: 'enqueue.php',
-			data: $('#join_queue').serialize(),
-			success: function(data) {
-				$('#your_location').html(data);
-				$('#join_queue').replaceWith($('#your_location'));
-				$('#your_location').fadeIn('fast');
-			}
-		});
+		if ($('#help').val() == '' || $('#loc').val() == '' ) {
+			alert("All fields are required!");
+		} else {
+			$.ajax({
+				type: "GET",
+				url: 'enqueue.php',
+				data: $('#join_queue').serialize(),
+				success: function(data) {
+					$('#your_location').html(data);
+					$('#join_queue').replaceWith($('#your_location'));
+					$('#your_location').fadeIn('fast');
+				}
+			});
+		}
 		return false;
 	});
 });
