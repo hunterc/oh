@@ -172,7 +172,6 @@
 					</header>
 					
 					<div id="student_info"> <!-- if student isn't already a member of the queue -->
-					<div class="alert alert-info">Office hours are very busy today.  Please be prepared with specific questions!</div>		
 					<?php if($comp_id != $user_id) { 
 							if(check_queue() == "off"){		
 					?>
