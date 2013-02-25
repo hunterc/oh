@@ -189,6 +189,20 @@ $(document).ready(function(){
 	});
 });
 
+$(document).ready(function(){
+  $(function() {
+    $( '#ldapqry' ).change(function(){
+      $.ajax({
+        type: 'POST',
+        url: 'uvaldap.php',
+        data: {param: $('#ldapqry').val()},
+        success: function(data) {
+          $( '#ldapresult' ).html(data);
+        }
+      });
+    });
+  });
+});
 
 
 

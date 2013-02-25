@@ -67,6 +67,13 @@
 		
 		<div class="container">
 			<h1>Logs</h1><br>
+			<div class="clearfix">
+          <label style="color: gray;" for="xlInput">LDAP Query</label>
+          <div class="input"> 
+            <input style="text-align: left;" class="xlarge" type="search" id="ldapqry" size="30" maxlen="30" placeholder="Comp ID, then Return"/>
+          </div>
+          <div id="ldapresult"></div> 
+      </div>
 			<legend>Student Log</legend>
 			<?php 
 			$table = '<table class="table table-striped">
