@@ -68,7 +68,7 @@
 		<div class="container">
 			<h1>Logs</h1><br>
 			<div class="clearfix">
-          <label style="color: gray;" for="xlInput">LDAP Query</label>
+          <legend>U.Va. LDAP Query</legend>
           <div class="input"> 
             <input style="text-align: left;" class="xlarge" type="search" id="ldapqry" size="30" maxlen="30" placeholder="Comp ID, then Return"/>
           </div>
