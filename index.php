@@ -156,9 +156,13 @@
 					
 						if($queue_size > 0){
 							echo $table;
-						}else{
+						}else if($queue_size == 0 && check_queue() == "on"){
 							echo "<div id='empty_table' class='alert'>";
 								echo "<strong>EMPTY!</strong> The queue is currently empty. YAY!";
+							echo "</div>";
+						}else{
+							echo "<div id='empty_table' class='alert alert-danger'>";
+								echo "<strong>The queue is OFF and no one is currently waiting</strong>";
 							echo "</div>";
 						}
 					?>
