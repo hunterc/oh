@@ -200,6 +200,14 @@ $(document).ready(function(){
           $( '#ldapresult' ).html(data);
         }
       });
+      $.ajax({
+      	type: 'POST',
+      	url: 'student_activity_result.php',
+      	data: {param: $('#ldapqry').val()},
+      	success: function(data) {
+      		$( '#student_activity_result' ).html(data);
+      	}
+      });
     });
   });
 });

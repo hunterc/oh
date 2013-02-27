@@ -67,12 +67,15 @@
 		
 		<div class="container">
 			<h1>Logs</h1><br>
-			<div class="clearfix">
-          <legend>U.Va. LDAP Query</legend>
+			<legend>U.Va. LDAP Query</legend>
+			<div class="clearfix" style="float: left">
           <div class="input"> 
             <input style="text-align: left;" class="xlarge" type="search" id="ldapqry" size="30" maxlen="30" placeholder="Comp ID, then Return"/>
           </div>
           <div id="ldapresult"></div> 
+      </div>
+      <div style="float: right" id="student_activity_result">
+      	Student activity result will show here...
       </div>
 			<legend>Student Log</legend>
 			<?php 
