@@ -81,6 +81,11 @@
 				<div class="container">
 				
 					<a style="color: white" class="brand" href="#">Office Hours</a>
+					<div class="nav-collapse collapse">
+						<ul class="nav">
+							<li><a href="https://www.google.com/calendar/embed?src=uvacs1110%40gmail.com&ctz=America/New_York">View Calendar</a></li>
+						</ul>
+					</div>
 					<ul class="nav pull-right">
 						<li>
 							<button class="btn">
