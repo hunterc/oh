@@ -47,3 +47,11 @@ footer {
 input {
 	text-align: center;
 }
+
+a#view_cal {
+	color: gray;
+}
+
+a#view_cal:hover {
+	color: white;
+}
