@@ -81,9 +81,10 @@
 				<div class="container">
 				
 					<a style="color: white" class="brand" href="#">Office Hours</a>
-					<a id="view_cal" class="brand" href="https://www.google.com/calendar/embed?src=uvacs1110%40gmail.com&ctz=America/New_York"> - View Calendar</a>
+					
 					<ul class="nav pull-right">
-						<li>
+						<li><a id="view_cal" class="brand" href="https://www.google.com/calendar/embed?src=uvacs1110%40gmail.com&ctz=America/New_York">View Calendar</a></li>
+						<li>	
 							<button class="btn">
 								<strong><?php echo $user_role . ' : ' . $user_fname .' '. $user_lname; ?></strong>
 							</button>
@@ -279,7 +280,7 @@
 		<footer>
 			<hr>
 			<small>
-				&copy; Hunter Cassidy and Daniel Miller &middot; <a href="terms.html">Terms of Use</a> <?php if($user_role == 'Instructor' || $user_role == 'TA') { ?> &middot; <a href="log.php">Logs</a> <?php } ?>  
+				&copy; Hunter Cassidy and Daniel Miller &middot; <a href="terms.html">Terms of Use</a> <?php if($user_role == 'Instructor' || $user_role == 'TA') { ?> &middot; <a href="log.php">Logs</a> &middot; <a href="widget_downloads.html">Widget Downloads</a><?php } ?>  
 			</small>
 		</footer>
 	</body>	

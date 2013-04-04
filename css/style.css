@@ -49,7 +49,7 @@ input {
 }
 
 a#view_cal {
-	color: gray;
+	color: lightgray;
 }
 
 a#view_cal:hover {
